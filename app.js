@@ -108,6 +108,9 @@ app.use((req,res,next)=>{
 //   res.send(registeredUser);
 // })
 
+app.get("/",(req,res)=>{
+  res.render("welcome.ejs");
+})
 app.use("/listings",listingRouter);
 app.use("/listings/:id/reviews",reviewsRouter);
 app.use("/",userRouter);

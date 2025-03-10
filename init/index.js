@@ -1,3 +1,4 @@
+
 const mongoose=require("mongoose");
 const initData=require("../init/data.js");
 const Listing=require("../models/listing.js");
