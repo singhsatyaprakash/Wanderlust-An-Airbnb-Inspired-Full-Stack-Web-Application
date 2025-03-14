@@ -1,23 +1,32 @@
 <% layout("/layouts/boilerplate.ejs") -%>
-<h1 class="col-6 offset-3">Sign Up WanderLust</h1>
-<div class="row mt-3">
-    <div class="col-6 offset-3">
+<div class="row mt-3 signup-container ">
+    <h1 class="col-6 offset-3 signup-mid">Sign Up WanderLust</h1>
+    <div class="col-6 offset-3 signup-inner">
         <form action="/signup" method="post" class="needs-validation" novalidate>
-            <div class="mb-3">
-                <label for="username" class="form-label">Username</label>
-                <input name="username" id="username" type="text" class="form-control" required />
+            <div class="mb-3 signup-input">
+                <label for="username" class="form-label"><b>Username</b></label>
+                <div class="input-div">
+                    <div class="icon-box"><i class="fa-solid fa-user"></i></div>
+                    <input name="username" id="username" type="text" class="form-control" required />
+                </div>
                 <div class="valid-feedback">Looks good!</div>
                 <div class="invalid-feedback">Username required.</div>
             </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input name="email" id="email" type="email" class="form-control" required />
+            <div class="mb-3 signup-input">
+                <label for="email" class="form-label"><b>Email</b></label>
+                <div class="input-div">
+                    <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                    <input name="email" id="email" type="email" class="form-control" required />
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input name="password" id="password" type="password" class="form-control" required />
+            <div class="mb-3 signup-input">
+                <label for="password" class="form-label"><b>Password</b></label>
+                <div class="input-div">
+                    <div class="icon-box"><i class="fa-solid fa-lock"></i></div>
+                    <input name="password" id="password" type="password" class="form-control" required />
+                </div>
             </div>
-            <button class="btn btn-success mb-3">SignUp</button>
+            <button class="btn btn-success mb-3 signup-btn">SignUp</button>
         </form>
     </div>
 </div>
